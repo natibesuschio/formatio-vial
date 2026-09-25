@@ -359,7 +359,7 @@
 <script type="text/x-dc" data-dc-script data-props="{&quot;acentoOxido&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#A8542F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#A8542F&quot;,&quot;#8C4A2C&quot;,&quot;#B25A2A&quot;,&quot;#474C55&quot;],&quot;section&quot;:&quot;Paleta&quot;},&quot;azulTinta&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#16233D&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#16233D&quot;,&quot;#0F1930&quot;,&quot;#2A2724&quot;,&quot;#3B2740&quot;],&quot;section&quot;:&quot;Paleta&quot;}}">
 class Component extends DCLogic {
   state = {
-    open: 0,
+    open: -1,
     menuOpen: false,
     narrow: typeof window !== 'undefined' && window.matchMedia
       ? window.matchMedia('(max-width: 899px)').matches
