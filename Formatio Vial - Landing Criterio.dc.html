@@ -14,13 +14,16 @@
 <style>
   :root { --ox: #A8542F; --tinta: #16233D; }
   html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
-  body { margin: 0; background: #F7F4EF; color: #16233D; }
+  body { margin: 0; background: #F7F4EF; color: #16233D; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+  html, body { overflow-x: hidden; }
+  section[id], #top { scroll-margin-top: 72px; }
   a { color: #16233D; text-decoration: none; }
   a:hover { color: var(--ox); }
   ::selection { background: #16233D; color: #F7F4EF; }
   summary::-webkit-details-marker { display: none; }
 </style>
 </helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#16233D"></rect><rect x="30" y="61" width="40" height="1.5" fill="#E4DCCD"></rect><circle cx="43" cy="61.7" r="5" fill="#A8542F"></circle></svg></template>
 
 <div style="font-family:'Libre Franklin',Helvetica,sans-serif;background:#F7F4EF">
 
@@ -71,8 +74,8 @@
       <h1 style="font:300 clamp(34px,5vw,68px)/1.05 'Libre Franklin',sans-serif;letter-spacing:-.03em;margin:0;color:var(--tinta);text-wrap:pretty">Formación profesional<br /><span style="font-weight:600">para quienes mueven la ciudad.</span></h1>
       <p style="font:400 clamp(16px,1.3vw,19px)/1.65 'Libre Franklin',sans-serif;color:#474C55;max-width:52ch;margin:clamp(24px,3vw,36px) 0 0">Capacitación para obtener o renovar tu licencia profesional de transporte público. Formación clara, organizada por etapas y pensada para acompañarte en todo el proceso.</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,3.5vw,40px)">
-        <a href="#cursos" style="display:inline-flex;align-items:center;gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:#F7F4EF;background:var(--tinta);padding:19px 26px;border-radius:2px;transition:background .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#0F1930;transform:translateY(-2px);">Conocer los cursos <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
-        <a href="#cta" style="display:inline-flex;align-items:center;gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--ox);border:1px solid var(--ox);padding:19px 26px;border-radius:2px;transition:background .2s ease,color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#A8542F;color:#F7F4EF;transform:translateY(-2px);">Hacer una consulta <span style="font-family:'IBM Plex Mono',monospace">↗</span></a>
+        <a href="#cursos" style="display:inline-flex;align-items:center;justify-content:center;flex:1 1 220px;max-width:max-content;min-width:min(100%,220px);gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:#F7F4EF;background:var(--tinta);padding:19px 26px;border-radius:2px;transition:background .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#0F1930;transform:translateY(-2px);">Conocer los cursos <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+        <a href="#cta" style="display:inline-flex;align-items:center;justify-content:center;flex:1 1 220px;max-width:max-content;min-width:min(100%,220px);gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--ox);border:1px solid var(--ox);padding:19px 26px;border-radius:2px;transition:background .2s ease,color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#A8542F;color:#F7F4EF;transform:translateY(-2px);">Hacer una consulta <span style="font-family:'IBM Plex Mono',monospace">↗</span></a>
       </div>
       <div style="margin-top:clamp(36px,4.5vw,64px);padding-top:clamp(22px,2.6vw,32px);border-top:1px solid #E4DCCD;display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap">
         <a href="https://www.google.com/maps/search/?api=1&query=Guanahani%20420%2C%20Constituci%C3%B3n%2C%20CABA" style="font:500 clamp(22px,2.4vw,32px)/1.25 'Libre Franklin',sans-serif;letter-spacing:-.02em;color:var(--tinta);display:inline-block;transition:color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="color:#A8542F;transform:translateX(4px)">Guanahani 420, <span style="font-weight:300">Constitución · CABA</span></a>
@@ -86,12 +89,12 @@
 <section style="background:#E4DCCD;border-bottom:1px solid #D6CCBA">
   <div style="max-width:1240px;margin:0 auto;padding:clamp(22px,2.6vw,32px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:16px clamp(20px,3vw,48px)">
     <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px clamp(20px,3vw,48px)">
-      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta)">Capacitación profesional</span></div>
-      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta)">Formación online</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)">Capacitación profesional</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)">Formación online</span></div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px clamp(20px,3vw,48px)">
-      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta)">Acompañamiento en la cursada</span></div>
-      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:var(--ox);flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta)">Certificado al finalizar</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:#474C55;flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)">Acompañamiento en la cursada</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:5px;height:5px;background:var(--ox);flex:none"></span><span style="font:500 11.5px/1.5 'Libre Franklin',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)">Certificado al finalizar</span></div>
     </div>
   </div>
 </section>
@@ -117,7 +120,7 @@
             <p style="margin:14px 0 0;font:400 clamp(16px,1.15vw,17px)/1.7 'Libre Franklin',sans-serif;color:#474C55;max-width:44ch">Para quienes comienzan el proceso para obtener su primera licencia profesional.</p>
           </div>
         </div>
-        <a href="#cta" style="display:inline-flex;align-items:center;gap:12px;flex:none;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);border-bottom:1px solid #C9C0AE;padding-bottom:10px;transition:color .2s ease,border-color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="color:#A8542F;border-bottom-color:#A8542F;transform:translateX(4px)">Ver Inicial <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+        <a href="#cta" style="display:inline-flex;align-items:center;gap:12px;flex:none;margin-left:calc(clamp(52px,5.4vw,74px) + clamp(18px,2.4vw,34px));font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);border-bottom:1px solid #C9C0AE;padding:14px 0 10px;transition:color .2s ease,border-color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="color:#A8542F;border-bottom-color:#A8542F;transform:translateX(4px)">Ver Inicial <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
       </div>
     </div>
     <div data-reveal="" style="border-bottom:1px solid #E4DCCD" style-hover="background:#F2EEE7">
@@ -129,7 +132,7 @@
             <p style="margin:14px 0 0;font:400 clamp(16px,1.15vw,17px)/1.7 'Libre Franklin',sans-serif;color:#474C55;max-width:44ch">Para conductores que ya cuentan con licencia profesional y necesitan renovarla.</p>
           </div>
         </div>
-        <a href="#cta" style="display:inline-flex;align-items:center;gap:12px;flex:none;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);border-bottom:1px solid #C9C0AE;padding-bottom:10px;transition:color .2s ease,border-color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="color:#A8542F;border-bottom-color:#A8542F;transform:translateX(4px)">Ver Renovación <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+        <a href="#cta" style="display:inline-flex;align-items:center;gap:12px;flex:none;margin-left:calc(clamp(52px,5.4vw,74px) + clamp(18px,2.4vw,34px));font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);border-bottom:1px solid #C9C0AE;padding:14px 0 10px;transition:color .2s ease,border-color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="color:#A8542F;border-bottom-color:#A8542F;transform:translateX(4px)">Ver Renovación <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
       </div>
     </div>
   </div>
@@ -189,7 +192,7 @@
       <h2 style="font:600 clamp(28px,3.4vw,46px)/1.1 'Libre Franklin',sans-serif;letter-spacing:-.02em;margin:0;color:var(--tinta);max-width:20ch;text-wrap:pretty">Tu capacitación, paso por paso.</h2>
     </div>
     <div data-reveal="" style="margin-top:clamp(40px,5vw,72px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(34px,4vw,52px)">
-    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(34px,4vw,52px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:clamp(34px,4vw,52px)">
       <div style="display:flex;flex-direction:column;gap:18px;transition:transform .28s cubic-bezier(.2,.7,.3,1)" style-hover="transform:translateY(-6px) scale(1.012)">
         <div style="display:flex;align-items:center;gap:10px"><span style="width:13px;height:13px;border-radius:50%;background:var(--ox);flex:none"></span><span style="flex:1;height:1px;background:#C9C0AE"></span></div>
         <span style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:var(--ox)">01</span>
@@ -203,7 +206,7 @@
         <p style="margin:0;font:400 clamp(16px,1.15vw,17px)/1.7 'Libre Franklin',sans-serif;color:#474C55;max-width:30ch">Completás tus datos y recibís las instrucciones de acceso.</p>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(34px,4vw,52px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:clamp(34px,4vw,52px)">
       <div style="display:flex;flex-direction:column;gap:18px;transition:transform .28s cubic-bezier(.2,.7,.3,1)" style-hover="transform:translateY(-6px) scale(1.012)">
         <div style="display:flex;align-items:center;gap:10px"><span style="width:13px;height:13px;border-radius:50%;border:1.5px solid #8C8A85;flex:none"></span><span style="flex:1;height:1px;background:#C9C0AE"></span></div>
         <span style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#474C55">03</span>
@@ -269,13 +272,13 @@
     <div style="margin-top:clamp(36px,4.5vw,64px);border-top:1px solid #C9C0AE">
       <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="6">
         <div style="border-bottom:1px solid #C9C0AE">
-          <button type="button" onClick="{{ q.toggle }}" style="width:100%;display:flex;align-items:center;gap:clamp(16px,2.4vw,32px);padding:clamp(22px,2.4vw,28px) clamp(12px,1.2vw,16px);margin:0 calc(-1 * clamp(12px,1.2vw,16px));background:none;border:0;cursor:pointer;text-align:left;font-family:'Libre Franklin',sans-serif;transition:background .2s ease" style-hover="background:#F2EEE7">
+          <button type="button" onClick="{{ q.toggle }}" style="width:100%;box-sizing:border-box;display:flex;align-items:center;gap:clamp(14px,2.4vw,32px);padding:clamp(20px,2.4vw,28px) 0;margin:0;min-height:64px;background:none;border:0;cursor:pointer;text-align:left;font-family:'Libre Franklin',sans-serif;transition:background .2s ease" style-hover="background:#F2EEE7">
             <span style="font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#A8542F;flex:none;width:22px">{{ q.n }}</span>
             <span style="flex:1;font:500 clamp(17px,1.5vw,21px)/1.35 'Libre Franklin',sans-serif;color:#16233D">{{ q.q }}</span>
             <span style="font:400 16px/1 'IBM Plex Mono',monospace;color:#8C8A85;flex:none;width:16px;text-align:center">{{ q.sign }}</span>
           </button>
           <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
-            <p style="margin:0 0 clamp(24px,2.6vw,30px);padding-left:clamp(38px,4vw,54px);max-width:64ch;font:400 clamp(16px,1.15vw,17px)/1.7 'Libre Franklin',sans-serif;color:#474C55">{{ q.a }}</p>
+            <p style="margin:0 0 clamp(24px,2.6vw,30px);padding-left:clamp(36px,4vw,54px);padding-right:8px;max-width:64ch;font:400 clamp(16px,1.15vw,17px)/1.7 'Libre Franklin',sans-serif;color:#474C55">{{ q.a }}</p>
           </sc-if>
         </div>
       </sc-for>
@@ -292,8 +295,8 @@
         <h2 style="font:300 clamp(32px,4.4vw,64px)/1.03 'Libre Franklin',sans-serif;letter-spacing:-.03em;margin:0;color:#F7F4EF">Empezá tu <span style="font-weight:600">capacitación.</span></h2>
         <p style="font:400 clamp(16px,1.2vw,17.5px)/1.7 'Libre Franklin',sans-serif;color:rgba(247,244,239,.72);max-width:44ch;margin:clamp(20px,2.5vw,30px) 0 0">Elegí el curso que te corresponde o escribinos si necesitás orientación.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(28px,3.5vw,40px)">
-          <a href="#cursos" style="display:inline-flex;align-items:center;gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);background:#F7F4EF;padding:19px 26px;border-radius:2px;transition:background .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#E4DCCD;color:#16233D;transform:translateY(-2px);">Ver cursos <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
-          <a href="https://wa.me/541139644678?text=Quiero%20acceder%20al%20campus" style="display:inline-flex;align-items:center;gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:#F7F4EF;border:1px solid rgba(247,244,239,.4);padding:19px 26px;border-radius:2px;transition:border-color .2s ease,color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="border-color:#C98A63;color:#C98A63;transform:translateY(-2px);">Ingresar al campus <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+          <a href="#cursos" style="display:inline-flex;align-items:center;justify-content:center;flex:1 1 220px;max-width:max-content;min-width:min(100%,220px);gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:var(--tinta);background:#F7F4EF;padding:19px 26px;border-radius:2px;transition:background .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="background:#E4DCCD;color:#16233D;transform:translateY(-2px);">Ver cursos <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
+          <a href="https://wa.me/541139644678?text=Quiero%20acceder%20al%20campus" style="display:inline-flex;align-items:center;justify-content:center;flex:1 1 220px;max-width:max-content;min-width:min(100%,220px);gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:#F7F4EF;border:1px solid rgba(247,244,239,.4);padding:19px 26px;border-radius:2px;transition:border-color .2s ease,color .2s ease,transform .25s cubic-bezier(.2,.7,.3,1)" style-hover="border-color:#C98A63;color:#C98A63;transform:translateY(-2px);">Ingresar al campus <span style="font-family:'IBM Plex Mono',monospace">→</span></a>
           <a href="https://wa.me/541139644678" style="display:inline-flex;align-items:center;gap:12px;font:500 15px/1 'Libre Franklin',sans-serif;color:rgba(247,244,239,.8);border-bottom:1px solid rgba(247,244,239,.3);padding:19px 2px;border-radius:0" style-hover="color:#C98A63;border-bottom-color:#C98A63">Hablar por WhatsApp <span style="font-family:'IBM Plex Mono',monospace">↗</span></a>
         </div>
       </div>
@@ -308,8 +311,8 @@
 <!-- FOOTER -->
 <footer style="background:#111B2F;color:#F7F4EF">
   <div style="max-width:1240px;margin:0 auto;padding:clamp(44px,5vw,72px) clamp(20px,4vw,56px)">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:clamp(28px,4vw,56px)">
-      <div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:clamp(28px,4vw,56px) 24px">
+      <div style="grid-column:1/-1;max-width:420px">
         <div style="display:flex;align-items:center;gap:12px">
           <div style="width:28px;height:28px;background:#F7F4EF;border-radius:1px;position:relative;flex:none">
             <div style="position:absolute;left:0;right:0;top:61%;height:1px;background:#111B2F"></div>
@@ -321,27 +324,27 @@
       </div>
       <div>
         <div style="font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(247,244,239,.45);margin-bottom:18px">EXPLORAR</div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <a href="#cursos" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">Cursos</a>
-          <a href="#formacion" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">Formación</a>
-          <a href="#como-funciona" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">Cómo funciona</a>
-          <a href="#preguntas" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">Preguntas</a>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <a href="#cursos" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">Cursos</a>
+          <a href="#formacion" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">Formación</a>
+          <a href="#como-funciona" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">Cómo funciona</a>
+          <a href="#preguntas" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">Preguntas</a>
         </div>
       </div>
       <div>
         <div style="font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(247,244,239,.45);margin-bottom:18px">CONTACTO</div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <a href="https://wa.me/541139644678" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">WhatsApp ↗</a>
-          <a href="mailto:info@formatio.com" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">info@formatio.com</a>
-          <span style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.62)">Constitución · CABA</span>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <a href="https://wa.me/541139644678" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">WhatsApp ↗</a>
+          <a href="mailto:info@formatio.com" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">info@formatio.com</a>
+          <span style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.62);padding:8px 0">Constitución · CABA</span>
         </div>
       </div>
       <div>
         <div style="font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.16em;color:rgba(247,244,239,.45);margin-bottom:18px">REDES</div>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">Instagram</a>
-          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">YouTube</a>
-          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82)" style-hover="color:#C98A63">LinkedIn</a>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">Instagram</a>
+          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">YouTube</a>
+          <a href="#top" style="font:400 15px/1.4 'Libre Franklin',sans-serif;color:rgba(247,244,239,.82);padding:8px 0" style-hover="color:#C98A63">LinkedIn</a>
         </div>
       </div>
     </div>
